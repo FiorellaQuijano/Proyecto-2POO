@@ -90,6 +90,41 @@ public class App extends Application {
         piezasNegras.add(14,bPeonPieza6);
         piezasNegras.add(15,bPeonPieza7);
         
+        ImageView wPeonPieza0 = new ImageView(wPeon);
+        ImageView wPeonPieza1 = new ImageView(wPeon);        
+        ImageView wPeonPieza2 = new ImageView(wPeon);
+        ImageView wPeonPieza3 = new ImageView(wPeon);
+        ImageView wPeonPieza4 = new ImageView(wPeon);
+        ImageView wPeonPieza5 = new ImageView(wPeon);
+        ImageView wPeonPieza6 = new ImageView(wPeon);
+        ImageView wPeonPieza7 = new ImageView(wPeon);
+        ImageView wTorrePieza0 = new ImageView(wTorre);
+        ImageView wTorrePieza1 = new ImageView(wTorre);
+        ImageView wCaballoPieza0 = new ImageView(wCaballo);
+        ImageView wCaballoPieza1 = new ImageView(wCaballo);
+        ImageView wAlfilPieza0 = new ImageView(wAlfil);
+        ImageView wAlfilPieza1 = new ImageView(wAlfil);
+        ImageView wReyPieza = new ImageView(wRey);
+        ImageView wReinaPieza = new ImageView(wReina);
+        
+        piezasBlancas.add(0,wPeonPieza0);
+        piezasBlancas.add(1,wPeonPieza1);
+        piezasBlancas.add(2,wPeonPieza2);
+        piezasBlancas.add(3,wPeonPieza3);
+        piezasBlancas.add(4,wPeonPieza4);
+        piezasBlancas.add(5,wPeonPieza5);
+        piezasBlancas.add(6,wPeonPieza6);
+        piezasBlancas.add(7,wPeonPieza7);
+        piezasBlancas.add(8,wTorrePieza0);
+        piezasBlancas.add(9,wCaballoPieza0);
+        piezasBlancas.add(10,wAlfilPieza1);
+        piezasBlancas.add(11,wReyPieza);
+        piezasBlancas.add(12,wReinaPieza);
+        piezasBlancas.add(13,wAlfilPieza0);
+        piezasBlancas.add(14,wCaballoPieza1);
+        piezasBlancas.add(15,wTorrePieza1);               
+
+        
         int k;  
         for (int i = 0; i < 8; i++){// El primer índice recorre las columnas.
             k=0;
@@ -101,6 +136,7 @@ public class App extends Application {
                             piezasNegras.get(k).setFitWidth(60);
                             piezasNegras.get(k).setFitHeight(60);
                             gp.add(piezasNegras.get(k), k, i);
+                            
                             k++;
                         }
                         
@@ -109,11 +145,25 @@ public class App extends Application {
                             piezasNegras.get(k+8).setFitWidth(60); 
                             piezasNegras.get(k+8).setFitHeight(60);
                             gp.add(piezasNegras.get(k+8), k, i);
+                            
+                           
                             k++;                 
-                        }                    
+                        }
+                        if(i==6){ 
+                            piezasBlancas.get(k).setFitWidth(60);
+                            piezasBlancas.get(k).setFitHeight(60);
+                            gp.add(piezasBlancas.get(k),k,i);
+                            k++;
+                        }
+                        if(i==7){
+                            piezasBlancas.get(k+8).setFitWidth(60);
+                            piezasBlancas.get(k+8).setFitHeight(60);
+                            gp.add(piezasBlancas.get(k+8),k,i);
+                            k++;
+                        }
             }
 	}
-
+        
         
         gp.setOnMouseClicked(event -> {
             int col = (int) event.getX() / (int) dim;
