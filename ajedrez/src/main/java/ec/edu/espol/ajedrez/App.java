@@ -21,7 +21,9 @@ public class App extends Application {
     
     @Override
     public void start(Stage stage) throws IOException {
+//        holiwis
         GridPane gp = new GridPane();
+        
         
         int count = 0;
         double dim = 60; 
