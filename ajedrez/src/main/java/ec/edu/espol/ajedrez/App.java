@@ -113,30 +113,28 @@ public class App extends Application {
                         }                    
             }
 	}
-//        Image image = new Image("Caballo.png"); 
-//        ImageView pieza = new ImageView(image);
-//        
-//        pieza.setFitWidth(60);
-//        pieza.setFitHeight(60);
-//        gp.add(pieza, 1, 0);
-//        
-//        gp.setOnMouseClicked(event -> {
-//            int col = (int) event.getX() / (int) dim;
-//            int fila = (int) event.getY() / (int) dim;
-//
-//            if (piezaSeleccionada != null) {
-//                GridPane.setColumnIndex(piezaSeleccionada, col);
-//                GridPane.setRowIndex(piezaSeleccionada, fila);
-//                piezaSeleccionada = null;
-//            } else {
-//                int oldCol = GridPane.getColumnIndex(pieza);
-//                int oldRow = GridPane.getRowIndex(pieza);
-//                
-//                if (col == oldCol && fila == oldRow) {
-//                    piezaSeleccionada = pieza;
-//                }
-//            }
-//        });
+
+        
+        gp.setOnMouseClicked(event -> {
+            int col = (int) event.getX() / (int) dim;
+            int fila = (int) event.getY() / (int) dim;
+
+            if (piezaSeleccionada != null) {
+                GridPane.setColumnIndex(piezaSeleccionada, col);
+                GridPane.setRowIndex(piezaSeleccionada, fila);
+                piezaSeleccionada = null;
+            } else {
+                for (ImageView i : piezasNegras) {
+                int oldCol = GridPane.getColumnIndex(i);
+                int oldRow = GridPane.getRowIndex(i);
+                
+                if (col == oldCol && fila == oldRow) {
+                    piezaSeleccionada = i;
+                    break;
+                }
+            }
+            }
+        });
         
         scene = new Scene(gp, 480, 480);
         stage.setTitle("Ajedrez");
