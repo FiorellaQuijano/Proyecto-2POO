@@ -163,8 +163,7 @@ public class App extends Application {
                         }
             }
 	}
-        
-        
+          
         gp.setOnMouseClicked(event -> {
             int col = (int) event.getX() / (int) dim;
             int fila = (int) event.getY() / (int) dim;
@@ -183,6 +182,17 @@ public class App extends Application {
                     break;
                 }
             }
+                if (piezaSeleccionada == null) {
+                    for (ImageView i : piezasBlancas) {
+                        int oldCol = GridPane.getColumnIndex(i);
+                        int oldRow = GridPane.getRowIndex(i);
+
+                        if (col == oldCol && fila == oldRow) {
+                            piezaSeleccionada = i;
+                            break;
+                        }
+                    }
+                }
             }
         });
         
@@ -191,8 +201,6 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
-    //cambio
 
     public static void main(String[] args) {
         launch();
