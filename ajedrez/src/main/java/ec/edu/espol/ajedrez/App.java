@@ -202,7 +202,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
     }
-private boolean movPeon(int oldCol, int oldRow, int newCol, int newRow, ImageView piezaSeleccionada){
+public boolean movPeon(int oldCol, int oldRow, int newCol, int newRow, ImageView piezaSeleccionada){
     int rowDif=newRow-oldRow;
     int colDif=Math.abs(newCol-oldCol);
     boolean peonBlanco=piezasNegras.contains(piezaSeleccionada);
