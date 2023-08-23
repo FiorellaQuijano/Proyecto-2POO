@@ -106,7 +106,7 @@ public class App extends Application {
         ImageView wAlfilPieza1 = new ImageView(wAlfil);
         ImageView wReyPieza = new ImageView(wRey);
         ImageView wReinaPieza = new ImageView(wReina);
-        
+         
         piezasBlancas.add(0,wPeonPieza0);
         piezasBlancas.add(1,wPeonPieza1);
         piezasBlancas.add(2,wPeonPieza2);
