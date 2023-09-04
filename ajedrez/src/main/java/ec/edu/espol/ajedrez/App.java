@@ -202,26 +202,26 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
     }
-public boolean movPeon(int oldCol, int oldRow, int newCol, int newRow, ImageView piezaSeleccionada){
-    int rowDif=newRow-oldRow;
-    int colDif=Math.abs(newCol-oldCol);
-    boolean peonBlanco=piezasNegras.contains(piezaSeleccionada);
-    boolean peonNegro=piezasBlancas.contains(piezaSeleccionada);
-    if(peonNegro){
-        if(rowDif==1 && colDif==0){
-            return true;
-        }else if(rowDif==2 && colDif==0 && oldRow==1){
-            return true;
-        }
-    }else if(peonBlanco){
-        if(rowDif==-1 && colDif==0){
-            return true;
-        }else if(rowDif==-2 && colDif==0 && oldRow==6){
-            return true;        
-        }
-    } 
-    return false;
-}
+//public boolean movPeon(int oldCol, int oldRow, int newCol, int newRow, ImageView piezaSeleccionada){
+//    int rowDif=newRow-oldRow;
+//    int colDif=Math.abs(newCol-oldCol);
+//    boolean peonBlanco=piezasNegras.contains(piezaSeleccionada);
+//    boolean peonNegro=piezasBlancas.contains(piezaSeleccionada);
+//    if(peonNegro){
+//        if(rowDif==1 && colDif==0){
+//            return true;
+//        }else if(rowDif==2 && colDif==0 && oldRow==1){
+//            return true;
+//        }
+//    }else if(peonBlanco){
+//        if(rowDif==-1 && colDif==0){
+//            return true;
+//        }else if(rowDif==-2 && colDif==0 && oldRow==6){
+//            return true;        
+//        }
+//    } 
+//    return false;
+//}
 	
 
     public static void main(String[] args) {
