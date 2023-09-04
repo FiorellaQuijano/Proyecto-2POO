@@ -12,17 +12,17 @@ public class Piezas {
     
     
     
-    public static boolean peon(int fromX, int fromY, int toX, int toY, String color){
+    public static boolean moPeon(int fromX, int fromY, int toX, int toY, String color){
         
-        boolean isWhite;
+        boolean isWhite=true;
         
-        if(color.equalsIgnoreCase(""))
-            i
+        if(color.equalsIgnoreCase("white"))
+            isWhite=true;
     
-        int deltaY = toY - fromY;
-        int deltaX = toX - fromX;
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
 
-        if (isWhite()) {
+        if (isWhite) {
             // Movimiento válido para un peón blanco
             if (deltaX == 0 && deltaY == 1) {
                 return true; // Avance de una casilla hacia adelante
@@ -35,15 +35,41 @@ public class Piezas {
             // Movimiento válido para un peón negro
             if (deltaX == 0 && deltaY == -1) {
                 return true; // Avance de una casilla hacia adelante
-            } else if (fromY == 6 && deltaX == 0 && deltaY == -2) {
+            } else if (fromY == 6 && deltaX == 0 && deltaY == 2) {
                 return true; // Avance de dos casillas desde la posición inicial
-            } else if (Math.abs(deltaX) == 1 && deltaY == -1) {
+            } else if (Math.abs(deltaX) == 1 && deltaY == 1) {
                 return true; // Captura diagonal
             }
         }
 
-        return false; // Movimiento no válido
+        return false; 
+    
     }
+    
+    public static boolean moTorre(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // La torre se mueve horizontal o verticalmente
+        if (deltaX == 0 && deltaY > 0 || deltaX > 0 && deltaY == 0) {
+            return true;
+        }
+
+        return false; 
     }
+    
+    public boolean moAlfil(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // El alfil se mueve en diagonal
+        if (deltaX == deltaY) {
+            return true;
+        }
+
+        return false; 
+    }
+    
+    
     
 }
