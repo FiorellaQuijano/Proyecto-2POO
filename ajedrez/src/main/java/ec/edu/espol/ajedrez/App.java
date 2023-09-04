@@ -167,7 +167,7 @@ public class App extends Application {
         gp.setOnMouseClicked(event -> {
             int col = (int) event.getX() / (int) dim;
             int fila = (int) event.getY() / (int) dim;
-
+            
             if (piezaSeleccionada != null) {
                 GridPane.setColumnIndex(piezaSeleccionada, col);
                 GridPane.setRowIndex(piezaSeleccionada, fila);
