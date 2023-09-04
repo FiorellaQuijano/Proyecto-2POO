@@ -58,7 +58,7 @@ public class Piezas {
         return false; 
     }
     
-    public boolean moAlfil(int fromX, int fromY, int toX, int toY) {
+    public static boolean moAlfil(int fromX, int fromY, int toX, int toY) {
         int deltaX = Math.abs(toX - fromX);
         int deltaY = Math.abs(toY - fromY);
 
@@ -70,6 +70,30 @@ public class Piezas {
         return false; 
     }
     
+    public static boolean movCaballo(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // El caballo se mueve en un patrón en forma de "L"
+        
+        return (deltaX == 2 && deltaY == 1) || (deltaX == 1 && deltaY == 2);
+    }
     
     
+    public static boolean moRey(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // El rey se mueve en cualquier dirección, pero solo una casilla a la vez
+        return deltaX <= 1 && deltaY <= 1;
+    }
+    
+    
+    public static boolean moReina(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // La reina puede moverse en cualquier dirección: horizontal, vertical o diagonal
+        return (deltaX == 0 || deltaY == 0 || deltaX == deltaY);
+    }
 }
