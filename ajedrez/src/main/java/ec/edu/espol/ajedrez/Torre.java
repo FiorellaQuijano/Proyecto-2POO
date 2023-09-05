@@ -13,7 +13,19 @@ import javafx.scene.image.ImageView;
 public class Torre extends Pieza{
 
     public Torre(ImageView i) {
-        super(i);
+        super(i);        
+    }
+    
+    public static boolean moTorre(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // La torre se mueve horizontal o verticalmente
+        if (deltaX == 0 && deltaY > 0 || deltaX > 0 && deltaY == 0) {
+            return true;
+        }
+
+        return false; 
     }
     
     

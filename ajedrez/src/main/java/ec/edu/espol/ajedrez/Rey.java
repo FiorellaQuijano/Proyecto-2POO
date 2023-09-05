@@ -16,5 +16,12 @@ public class Rey extends Pieza{
         super(i);
     }
     
+    public static boolean moRey(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // El rey se mueve en cualquier dirección, pero solo una casilla a la vez
+        return deltaX <= 1 && deltaY <= 1;
+    }
     
 }
