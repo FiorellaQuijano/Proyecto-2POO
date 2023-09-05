@@ -23,8 +23,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         GridPane gp = new GridPane();
-        ArrayList<ImageView> piezasNegras = new ArrayList<>();
-        ArrayList<ImageView> piezasBlancas = new ArrayList<>();
+        ArrayList<Pieza> piezasNegras = new ArrayList<>();
+        ArrayList<Pieza> piezasBlancas = new ArrayList<>();
         
         
         int count = 0;
