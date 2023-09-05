@@ -16,5 +16,12 @@ public class Reina extends Pieza{
         super(i);
     }
     
+    public static boolean moReina(int fromX, int fromY, int toX, int toY) {
+        int deltaX = Math.abs(toX - fromX);
+        int deltaY = Math.abs(toY - fromY);
+
+        // La reina puede moverse en cualquier dirección: horizontal, vertical o diagonal
+        return (deltaX == 0 || deltaY == 0 || deltaX == deltaY);
+    }
     
 }
