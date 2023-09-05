@@ -19,12 +19,14 @@ public class App extends Application {
 
     private static Scene scene;
     private ImageView piezaSeleccionada = null;
+    ArrayList<Pieza> piezasNegras;
+    ArrayList<Pieza> piezasBlancas;
     
     @Override
     public void start(Stage stage) throws IOException {
         GridPane gp = new GridPane();
-        ArrayList<Pieza> piezasNegras = new ArrayList<>();
-        ArrayList<Pieza> piezasBlancas = new ArrayList<>();
+        piezasNegras = new ArrayList<>();
+        piezasBlancas = new ArrayList<>();
         
         
         int count = 0;
