@@ -13,11 +13,13 @@ import javafx.scene.image.ImageView;
  */
 public abstract class Pieza {
    ImageView i;
+   
 
     public Pieza( ImageView i) {
         this.i = i;
     }
-    
+
+       
     
     public ImageView getI() {
         return i;

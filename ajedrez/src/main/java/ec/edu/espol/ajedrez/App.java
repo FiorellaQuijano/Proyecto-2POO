@@ -158,21 +158,45 @@ public class App extends Application {
 //        ImageView wReinaPieza = new ImageView(wReina);
         
         Peon wPeonPieza0 = new Peon(new ImageView(wPeon));
-        Peon wPeonPieza1 = new Peon(new ImageView(wPeon));        
+        wPeonPieza0.i.setUserData("PeonBlanco");
+        Peon wPeonPieza1 = new Peon(new ImageView(wPeon));
+        wPeonPieza1.i.setUserData("PeonBlanco");
         Peon wPeonPieza2 = new Peon(new ImageView(wPeon));
+        wPeonPieza2.i.setUserData("PeonBlanco");
         Peon wPeonPieza3 = new Peon(new ImageView(wPeon));
+        wPeonPieza3.i.setUserData("PeonBlanco");
         Peon wPeonPieza4 = new Peon(new ImageView(wPeon));
+        wPeonPieza4.i.setUserData("PeonBlanco");
         Peon wPeonPieza5 = new Peon(new ImageView(wPeon));
+        wPeonPieza5.i.setUserData("PeonBlanco");
         Peon wPeonPieza6 = new Peon(new ImageView(wPeon));
+        wPeonPieza6.i.setUserData("PeonBlanco");
         Peon wPeonPieza7 = new Peon(new ImageView(wPeon));
+        wPeonPieza7.i.setUserData("PeonBlanco");
+        
         Torre wTorrePieza0 = new Torre(new ImageView(wTorre));
+        wTorrePieza0.i.setUserData("TorreBlanca");
+        
         Torre wTorrePieza1 = new Torre(new ImageView(wTorre));
+        wTorrePieza1.i.setUserData("TorreBlanca");
+        
         Caballo wCaballoPieza0 = new Caballo(new ImageView(wCaballo));
+        wCaballoPieza0.i.setUserData("CaballoBlanco");
+        
         Caballo wCaballoPieza1 = new Caballo(new ImageView(wCaballo));
+        wCaballoPieza1.i.setUserData("CaballoBlanco");
+        
         Alfil wAlfilPieza0 = new Alfil(new ImageView(wAlfil));
+        wAlfilPieza0.i.setUserData("AlfilBlanco");
+        
         Alfil wAlfilPieza1 = new Alfil(new ImageView(wAlfil));
+        wAlfilPieza1.i.setUserData("AlfilBlanco");
+        
         Rey wReyPieza = new Rey(new ImageView(wRey));
+        wReyPieza.i.setUserData("ReyBlanco");
+        
         Reina wReinaPieza = new Reina(new ImageView(wReina));
+        wReinaPieza.i.setUserData("ReinaBlanco");
          
         piezasBlancas.add(0,wPeonPieza0);
         piezasBlancas.add(1,wPeonPieza1);
