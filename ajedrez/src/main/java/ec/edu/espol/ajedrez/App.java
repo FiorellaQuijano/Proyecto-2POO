@@ -76,21 +76,52 @@ public class App extends Application {
 //        ImageView bReinaPieza = new ImageView(bReina);
 
         Peon bPeonPieza0 = new Peon(new ImageView(bPeon));
-        Peon bPeonPieza1 = new Peon(new ImageView(bPeon));        
+        bPeonPieza0.i.setUserData("PeonNegro");
+        
+        Peon bPeonPieza1 = new Peon(new ImageView(bPeon)); 
+        bPeonPieza1.i.setUserData("PeonNegro");
+        
         Peon bPeonPieza2 = new Peon(new ImageView(bPeon));
+        bPeonPieza2.i.setUserData("PeonNegro");
+        
         Peon bPeonPieza3 = new Peon(new ImageView(bPeon));
+        bPeonPieza3.i.setUserData("PeonNegro");
+        
         Peon bPeonPieza4 = new Peon(new ImageView(bPeon));
+        bPeonPieza4.i.setUserData("PeonNegro");
+        
         Peon bPeonPieza5 = new Peon(new ImageView(bPeon));
+        bPeonPieza5.i.setUserData("PeonNegro");
+        
         Peon bPeonPieza6 = new Peon(new ImageView(bPeon));
+        bPeonPieza6.i.setUserData("PeonNegro");
+        
         Peon bPeonPieza7 = new Peon(new ImageView(bPeon));
+        bPeonPieza7.i.setUserData("PeonNegro");
+        
         Torre bTorrePieza0 = new Torre(new ImageView(bTorre));
+        bTorrePieza0.i.setUserData("TorreNegra");
+        
         Torre bTorrePieza1 = new Torre(new ImageView(bTorre));
+        bTorrePieza1.i.setUserData("TorreNegra");
+        
         Caballo bCaballoPieza0 = new Caballo(new ImageView(bCaballo));
+        bCaballoPieza0.i.setUserData("CaballoNegro");
+        
         Caballo bCaballoPieza1 = new Caballo(new ImageView(bCaballo));
+        bCaballoPieza1.i.setUserData("CaballoNegro");
+        
         Alfil bAlfilPieza0 = new Alfil(new ImageView(bAlfil));
+        bAlfilPieza0.i.setUserData("AlfilNegro");
+        
         Alfil bAlfilPieza1 = new Alfil(new ImageView(bAlfil));
+        bAlfilPieza1.i.setUserData("AlfilNegro");
+        
         Rey bReyPieza = new Rey(new ImageView(bRey));
+        bReyPieza.i.setUserData("ReyNegro");
+        
         Reina bReinaPieza = new Reina(new ImageView(bReina));
+        bReinaPieza.i.setUserData("ReinaNegra");
         
         piezasNegras.add(0,bTorrePieza0);
         piezasNegras.add(1,bCaballoPieza0);
