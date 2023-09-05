@@ -392,21 +392,74 @@ public class App extends Application {
     private boolean movimientoValido(int oldCol, int oldRow, int newCol, int newRow,ImageView seleccionada) {
         
             for (Pieza p : piezasNegras) {
-                if (p.getI() == seleccionada) {
+                if (p.getI().getUserData() == seleccionada.getUserData()) {
                     if (p instanceof Peon) {
                         System.out.println(p);
                         return Peon.movPeon(oldCol, oldRow, newCol, newRow, (Peon) p, piezasNegras, piezasBlancas);
                     }
+                    
+                    if (p instanceof Torre) {
+                        System.out.println(p);
+                        return Torre.moTorre(newRow, newRow, newRow, newRow);
+                    }
+                    
+                    
+                    if (p instanceof Caballo) {
+                        System.out.println(p);
+                        return Caballo.movCaballo(newRow, newRow, newRow, newRow);
+                    }
+                    
+                    if (p instanceof Alfil) {
+                        System.out.println(p);
+                        return Alfil.moAlfil(newRow, newRow, newRow, newRow);                        
+                    }
+                    
+                    if (p instanceof Rey) {
+                        System.out.println(p);
+                        return Rey.moRey(newRow, newRow, newRow, newRow);                        
+                    }
+                    
+                    if (p instanceof Reina) {
+                        System.out.println(p);
+                        return Reina.moReina(newRow, newRow, newRow, newRow);                        
+                    }    
+                 
                     // Agrega más lógica de movimiento para otras piezas aquí si es necesario
                 }
             }
 
             for (Pieza p : piezasBlancas) {
-                if (p.getI() == seleccionada) {
+                if (p.getI().getUserData() == seleccionada.getUserData()) {
                     if (p instanceof Peon) {
                         System.out.println(p);
                         return Peon.movPeon(oldCol, oldRow, newCol, newRow, (Peon) p, piezasNegras, piezasBlancas);
                     }
+                    
+                    if (p instanceof Torre) {
+                        System.out.println(p);
+                        return Torre.moTorre(newRow, newRow, newRow, newRow);
+                    }
+                    
+                    
+                    if (p instanceof Caballo) {
+                        System.out.println(p);
+                        return Caballo.movCaballo(newRow, newRow, newRow, newRow);
+                    }
+                    
+                    if (p instanceof Alfil) {
+                        System.out.println(p);
+                        return Alfil.moAlfil(newRow, newRow, newRow, newRow);                        
+                    }
+                    
+                    if (p instanceof Rey) {
+                        System.out.println(p);
+                        return Rey.moRey(newRow, newRow, newRow, newRow);                        
+                    }
+                    
+                    if (p instanceof Reina) {
+                        System.out.println(p);
+                        return Reina.moReina(newRow, newRow, newRow, newRow);                        
+                    }   
                     // Agrega más lógica de movimiento para otras piezas aquí si es necesario
                 }
             }
