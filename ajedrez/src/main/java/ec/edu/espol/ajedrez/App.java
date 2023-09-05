@@ -56,22 +56,39 @@ public class App extends Application {
         Image wReina = new Image("Reina.png");
         
          
-        ImageView bPeonPieza0 = new ImageView(bPeon);
-        ImageView bPeonPieza1 = new ImageView(bPeon);        
-        ImageView bPeonPieza2 = new ImageView(bPeon);
-        ImageView bPeonPieza3 = new ImageView(bPeon);
-        ImageView bPeonPieza4 = new ImageView(bPeon);
-        ImageView bPeonPieza5 = new ImageView(bPeon);
-        ImageView bPeonPieza6 = new ImageView(bPeon);
-        ImageView bPeonPieza7 = new ImageView(bPeon);
-        ImageView bTorrePieza0 = new ImageView(bTorre);
-        ImageView bTorrePieza1 = new ImageView(bTorre);
-        ImageView bCaballoPieza0 = new ImageView(bCaballo);
-        ImageView bCaballoPieza1 = new ImageView(bCaballo);
-        ImageView bAlfilPieza0 = new ImageView(bAlfil);
-        ImageView bAlfilPieza1 = new ImageView(bAlfil);
-        ImageView bReyPieza = new ImageView(bRey);
-        ImageView bReinaPieza = new ImageView(bReina);
+//        ImageView bPeonPieza0 = new ImageView(bPeon);
+//        ImageView bPeonPieza1 = new ImageView(bPeon);        
+//        ImageView bPeonPieza2 = new ImageView(bPeon);
+//        ImageView bPeonPieza3 = new ImageView(bPeon);
+//        ImageView bPeonPieza4 = new ImageView(bPeon);
+//        ImageView bPeonPieza5 = new ImageView(bPeon);
+//        ImageView bPeonPieza6 = new ImageView(bPeon);
+//        ImageView bPeonPieza7 = new ImageView(bPeon);
+//        ImageView bTorrePieza0 = new ImageView(bTorre);
+//        ImageView bTorrePieza1 = new ImageView(bTorre);
+//        ImageView bCaballoPieza0 = new ImageView(bCaballo);
+//        ImageView bCaballoPieza1 = new ImageView(bCaballo);
+//        ImageView bAlfilPieza0 = new ImageView(bAlfil);
+//        ImageView bAlfilPieza1 = new ImageView(bAlfil);
+//        ImageView bReyPieza = new ImageView(bRey);
+//        ImageView bReinaPieza = new ImageView(bReina);
+
+        Peon bPeonPieza0 = new Peon(new ImageView(bPeon));
+        Peon bPeonPieza1 = new Peon(new ImageView(bPeon));        
+        Peon bPeonPieza2 = new Peon(new ImageView(bPeon));
+        Peon bPeonPieza3 = new Peon(new ImageView(bPeon));
+        Peon bPeonPieza4 = new Peon(new ImageView(bPeon));
+        Peon bPeonPieza5 = new Peon(new ImageView(bPeon));
+        Peon bPeonPieza6 = new Peon(new ImageView(bPeon));
+        Peon bPeonPieza7 = new Peon(new ImageView(bPeon));
+        Torre bTorrePieza0 = new Torre(new ImageView(bTorre));
+        Torre bTorrePieza1 = new Torre(new ImageView(bTorre));
+        Caballo bCaballoPieza0 = new Caballo(new ImageView(bCaballo));
+        Caballo bCaballoPieza1 = new Caballo(new ImageView(bCaballo));
+        Alfil bAlfilPieza0 = new Alfil(new ImageView(bAlfil));
+        Alfil bAlfilPieza1 = new Alfil(new ImageView(bAlfil));
+        Rey bReyPieza = new Rey(new ImageView(bRey));
+        Reina bReinaPieza = new Reina(new ImageView(bReina));
         
         piezasNegras.add(0,bTorrePieza0);
         piezasNegras.add(1,bCaballoPieza0);
@@ -90,22 +107,39 @@ public class App extends Application {
         piezasNegras.add(14,bPeonPieza6);
         piezasNegras.add(15,bPeonPieza7);
         
-        ImageView wPeonPieza0 = new ImageView(wPeon);
-        ImageView wPeonPieza1 = new ImageView(wPeon);        
-        ImageView wPeonPieza2 = new ImageView(wPeon);
-        ImageView wPeonPieza3 = new ImageView(wPeon);
-        ImageView wPeonPieza4 = new ImageView(wPeon);
-        ImageView wPeonPieza5 = new ImageView(wPeon);
-        ImageView wPeonPieza6 = new ImageView(wPeon);
-        ImageView wPeonPieza7 = new ImageView(wPeon);
-        ImageView wTorrePieza0 = new ImageView(wTorre);
-        ImageView wTorrePieza1 = new ImageView(wTorre);
-        ImageView wCaballoPieza0 = new ImageView(wCaballo);
-        ImageView wCaballoPieza1 = new ImageView(wCaballo);
-        ImageView wAlfilPieza0 = new ImageView(wAlfil);
-        ImageView wAlfilPieza1 = new ImageView(wAlfil);
-        ImageView wReyPieza = new ImageView(wRey);
-        ImageView wReinaPieza = new ImageView(wReina);
+//        ImageView wPeonPieza0 = new ImageView(wPeon);
+//        ImageView wPeonPieza1 = new ImageView(wPeon);        
+//        ImageView wPeonPieza2 = new ImageView(wPeon);
+//        ImageView wPeonPieza3 = new ImageView(wPeon);
+//        ImageView wPeonPieza4 = new ImageView(wPeon);
+//        ImageView wPeonPieza5 = new ImageView(wPeon);
+//        ImageView wPeonPieza6 = new ImageView(wPeon);
+//        ImageView wPeonPieza7 = new ImageView(wPeon);
+//        ImageView wTorrePieza0 = new ImageView(wTorre);
+//        ImageView wTorrePieza1 = new ImageView(wTorre);
+//        ImageView wCaballoPieza0 = new ImageView(wCaballo);
+//        ImageView wCaballoPieza1 = new ImageView(wCaballo);
+//        ImageView wAlfilPieza0 = new ImageView(wAlfil);
+//        ImageView wAlfilPieza1 = new ImageView(wAlfil);
+//        ImageView wReyPieza = new ImageView(wRey);
+//        ImageView wReinaPieza = new ImageView(wReina);
+        
+        Peon wPeonPieza0 = new Peon(new ImageView(wPeon));
+        Peon wPeonPieza1 = new Peon(new ImageView(wPeon));        
+        Peon wPeonPieza2 = new Peon(new ImageView(wPeon));
+        Peon wPeonPieza3 = new Peon(new ImageView(wPeon));
+        Peon wPeonPieza4 = new Peon(new ImageView(wPeon));
+        Peon wPeonPieza5 = new Peon(new ImageView(wPeon));
+        Peon wPeonPieza6 = new Peon(new ImageView(wPeon));
+        Peon wPeonPieza7 = new Peon(new ImageView(wPeon));
+        Torre wTorrePieza0 = new Torre(new ImageView(wTorre));
+        Torre wTorrePieza1 = new Torre(new ImageView(wTorre));
+        Caballo wCaballoPieza0 = new Caballo(new ImageView(wCaballo));
+        Caballo wCaballoPieza1 = new Caballo(new ImageView(wCaballo));
+        Alfil wAlfilPieza0 = new Alfil(new ImageView(wAlfil));
+        Alfil wAlfilPieza1 = new Alfil(new ImageView(wAlfil));
+        Rey wReyPieza = new Rey(new ImageView(wRey));
+        Reina wReinaPieza = new Reina(new ImageView(wReina));
          
         piezasBlancas.add(0,wPeonPieza0);
         piezasBlancas.add(1,wPeonPieza1);
@@ -125,70 +159,146 @@ public class App extends Application {
         piezasBlancas.add(15,wTorrePieza1);               
 
         
+//        int k;  
+//        for (int i = 0; i < 8; i++){// El primer índice recorre las columnas.
+//            k=0;
+//            
+//            for (int j = 0; j < 8; j++){// El segundo índice recorre las filas.
+//                    // Procesamos cada elemento del tablero                                       
+//                                        
+//                        if(i==0){                        
+//                            piezasNegras.get(k).setFitWidth(60);
+//                            piezasNegras.get(k).setFitHeight(60);
+//                            gp.add(piezasNegras.get(k), k, i);
+//                            
+//                            k++;
+//                        }
+//                        
+//                        if(i==1){
+//                                                        
+//                            piezasNegras.get(k+8).setFitWidth(60); 
+//                            piezasNegras.get(k+8).setFitHeight(60);
+//                            gp.add(piezasNegras.get(k+8), k, i);
+//                            
+//                           
+//                            k++;                 
+//                        }
+//                        if(i==6){ 
+//                            piezasBlancas.get(k).setFitWidth(60);
+//                            piezasBlancas.get(k).setFitHeight(60);
+//                            gp.add(piezasBlancas.get(k),k,i);
+//                            k++;
+//                        }
+//                        if(i==7){
+//                            piezasBlancas.get(k+8).setFitWidth(60);
+//                            piezasBlancas.get(k+8).setFitHeight(60);
+//                            gp.add(piezasBlancas.get(k+8),k,i);
+//                            k++;
+//                        }
+//            }
+//	}
         int k;  
-        for (int i = 0; i < 8; i++){// El primer índice recorre las columnas.
+        for (int i = 0; i < 8; i++){
             k=0;
             
-            for (int j = 0; j < 8; j++){// El segundo índice recorre las filas.
-                    // Procesamos cada elemento del tablero                                       
+            for (int j = 0; j < 8; j++){                                   
                                         
                         if(i==0){                        
-                            piezasNegras.get(k).setFitWidth(60);
-                            piezasNegras.get(k).setFitHeight(60);
-                            gp.add(piezasNegras.get(k), k, i);
+                            piezasNegras.get(k).getI().setFitWidth(60);
+                            piezasNegras.get(k).getI().setFitHeight(60);
+                            gp.add(piezasNegras.get(k).getI(), k, i);
                             
                             k++;
                         }
                         
                         if(i==1){
                                                         
-                            piezasNegras.get(k+8).setFitWidth(60); 
-                            piezasNegras.get(k+8).setFitHeight(60);
-                            gp.add(piezasNegras.get(k+8), k, i);
+                            piezasNegras.get(k+8).getI().setFitWidth(60); 
+                            piezasNegras.get(k+8).getI().setFitHeight(60);
+                            gp.add(piezasNegras.get(k+8).getI(), k, i);
                             
                            
                             k++;                 
                         }
                         if(i==6){ 
-                            piezasBlancas.get(k).setFitWidth(60);
-                            piezasBlancas.get(k).setFitHeight(60);
-                            gp.add(piezasBlancas.get(k),k,i);
+                            piezasBlancas.get(k).getI().setFitWidth(60);
+                            piezasBlancas.get(k).getI().setFitHeight(60);
+                            gp.add(piezasBlancas.get(k).getI(),k,i);
                             k++;
                         }
                         if(i==7){
-                            piezasBlancas.get(k+8).setFitWidth(60);
-                            piezasBlancas.get(k+8).setFitHeight(60);
-                            gp.add(piezasBlancas.get(k+8),k,i);
+                            piezasBlancas.get(k+8).getI().setFitWidth(60);
+                            piezasBlancas.get(k+8).getI().setFitHeight(60);
+                            gp.add(piezasBlancas.get(k+8).getI(),k,i);
                             k++;
                         }
             }
 	}
           
-        gp.setOnMouseClicked(event -> {
+//        gp.setOnMouseClicked(event -> {
+//            int col = (int) event.getX() / (int) dim;
+//            int fila = (int) event.getY() / (int) dim;
+//            
+//            if (piezaSeleccionada != null) {
+//                GridPane.setColumnIndex(piezaSeleccionada, col);
+//                GridPane.setRowIndex(piezaSeleccionada, fila);
+//                piezaSeleccionada = null;
+//            } else {
+//                for (ImageView i : piezasNegras) {
+//                int oldCol = GridPane.getColumnIndex(i);
+//                int oldRow = GridPane.getRowIndex(i);
+//                
+//                if (col == oldCol && fila == oldRow) {
+//                    piezaSeleccionada = i;
+//                    break;
+//                }
+//            }
+//                if (piezaSeleccionada == null) {
+//                    for (ImageView i : piezasBlancas) {
+//                        int oldCol = GridPane.getColumnIndex(i);
+//                        int oldRow = GridPane.getRowIndex(i);
+//
+//                        if (col == oldCol && fila == oldRow) {
+//                            piezaSeleccionada = i;
+//                            break;
+//                        }
+//                    }
+//                }
+//            }
+//        });
+        
+            gp.setOnMouseClicked(event -> {
             int col = (int) event.getX() / (int) dim;
             int fila = (int) event.getY() / (int) dim;
-            
-            if (piezaSeleccionada != null) {
-                GridPane.setColumnIndex(piezaSeleccionada, col);
-                GridPane.setRowIndex(piezaSeleccionada, fila);
-                piezaSeleccionada = null;
-            } else {
-                for (ImageView i : piezasNegras) {
-                int oldCol = GridPane.getColumnIndex(i);
-                int oldRow = GridPane.getRowIndex(i);
-                
-                if (col == oldCol && fila == oldRow) {
-                    piezaSeleccionada = i;
-                    break;
-                }
-            }
-                if (piezaSeleccionada == null) {
-                    for (ImageView i : piezasBlancas) {
-                        int oldCol = GridPane.getColumnIndex(i);
-                        int oldRow = GridPane.getRowIndex(i);
 
-                        if (col == oldCol && fila == oldRow) {
-                            piezaSeleccionada = i;
+            if (piezaSeleccionada != null) {
+                
+                int oldCol = GridPane.getColumnIndex(piezaSeleccionada);
+                System.out.println(oldCol);
+                int oldRow = GridPane.getRowIndex(piezaSeleccionada);
+                System.out.println(oldRow);
+                
+                // Verificar el movimiento válido
+                if (movimientoValido(oldCol, oldRow, col, fila,piezaSeleccionada)) {
+                    System.out.println(col);
+                    GridPane.setColumnIndex(piezaSeleccionada, col);
+                    GridPane.setRowIndex(piezaSeleccionada, fila);
+                    piezaSeleccionada = null;
+                }
+            } else {
+                // Seleccionar una pieza si no hay ninguna pieza seleccionada
+                for (Pieza p : piezasNegras) {
+                    if (p.getI() == piezaSeleccionada) {
+                        piezaSeleccionada = p.getI();
+                        System.out.println("hola");
+                        break;
+                    }
+                }
+
+                if (piezaSeleccionada == null) {
+                    for (Pieza p : piezasBlancas) {
+                        if (p.getI() == piezaSeleccionada) {
+                            piezaSeleccionada = p.getI();
                             break;
                         }
                     }
@@ -222,7 +332,30 @@ public class App extends Application {
 //    } 
 //    return false;
 //}
-	
+    private boolean movimientoValido(int oldCol, int oldRow, int newCol, int newRow,ImageView seleccionada) {
+        
+            for (Pieza p : piezasNegras) {
+                if (p.getI() == seleccionada) {
+                    if (p instanceof Peon) {
+                        System.out.println(p);
+                        return Peon.movPeon(oldCol, oldRow, newCol, newRow, (Peon) p, piezasNegras, piezasBlancas);
+                    }
+                    // Agrega más lógica de movimiento para otras piezas aquí si es necesario
+                }
+            }
+
+            for (Pieza p : piezasBlancas) {
+                if (p.getI() == seleccionada) {
+                    if (p instanceof Peon) {
+                        System.out.println(p);
+                        return Peon.movPeon(oldCol, oldRow, newCol, newRow, (Peon) p, piezasNegras, piezasBlancas);
+                    }
+                    // Agrega más lógica de movimiento para otras piezas aquí si es necesario
+                }
+            }
+        
+        return false;
+    }
 
     public static void main(String[] args) {
         launch();
