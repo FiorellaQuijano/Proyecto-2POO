@@ -344,8 +344,12 @@ public class App extends Application {
                 }
             } else {
                 // Seleccionar una pieza si no hay ninguna pieza seleccionada
+                
+                piezaSeleccionada = ;                
+                
                 for (Pieza p : piezasNegras) {
-                    if (p.getI() == piezaSeleccionada) {
+                    
+                    if (p.getI().getUserData().toString().equals(piezaSeleccionada.getUserData().toString())) {
                         piezaSeleccionada = p.getI();
                         System.out.println("hola");
                         break;
@@ -354,7 +358,7 @@ public class App extends Application {
 
                 if (piezaSeleccionada == null) {
                     for (Pieza p : piezasBlancas) {
-                        if (p.getI() == piezaSeleccionada) {
+                        if (p.getI().toString().equals(piezaSeleccionada.getUserData().toString())) {
                             piezaSeleccionada = p.getI();
                             break;
                         }
@@ -392,7 +396,7 @@ public class App extends Application {
     private boolean movimientoValido(int oldCol, int oldRow, int newCol, int newRow,ImageView seleccionada) {
         
             for (Pieza p : piezasNegras) {
-                if (p.getI().getUserData() == seleccionada.getUserData()) {
+                if (p.getI().getUserData().toString().equals(seleccionada.getUserData().toString()) ) {
                     if (p instanceof Peon) {
                         System.out.println(p);
                         return Peon.movPeon(oldCol, oldRow, newCol, newRow, (Peon) p, piezasNegras, piezasBlancas);
@@ -429,7 +433,7 @@ public class App extends Application {
             }
 
             for (Pieza p : piezasBlancas) {
-                if (p.getI().getUserData() == seleccionada.getUserData()) {
+                if (p.getI().getUserData().toString().equals(seleccionada.getUserData().toString())) {
                     if (p instanceof Peon) {
                         System.out.println(p);
                         return Peon.movPeon(oldCol, oldRow, newCol, newRow, (Peon) p, piezasNegras, piezasBlancas);
